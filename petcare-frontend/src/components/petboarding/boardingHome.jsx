@@ -1,27 +1,28 @@
 import React from "react";
-import {useNavigate} from 'react-router-dom';
+// import {useNavigate} from 'react-router-dom';
 import Footer from './Footer.js';
+import Header from './Header';
+import image from '../../images/home.jpg';
 
     const BoardingHome = () =>{
 
-        const navigate = useNavigate();
+        // const navigate = useNavigate();
 
-        const adminChange = () =>{
-            navigate('/pet-boarding');
-        }
+        // const adminChange = () =>{
+        //     navigate('/pet-boarding');
+        // }
 
-        const clientChange = () =>{
-            navigate('/boarding');
-        }
+        // const clientChange = () =>{
+        //     navigate('/boarding');
+        // }
         return (
             <>
-                {/*<Header/>*/}
-                <br/><br/><br/>
-                <div className="square border border-primary" style={{width: "60%",marginLeft:"20%"}}>
+                <Header/>
+                <div className='row' style={{justifyContent: "center"}}>
 
-                    <h1 style={{justifyContent: "center"}}>Pet Boarding Places Home</h1>
+                    <img src={image} alt='add' style={{width:'40%'}}></img>
 
-                    <div className='row' style={{justifyContent: "center"}}>
+                    {/* <div className='row' style={{justifyContent: "center"}}>
                         <div className='col-sm-3'>
                             <input type="submit" name='Admin View' value='Admin View' className='btn btn-success'
                                    onClick={adminChange}></input>
@@ -30,7 +31,7 @@ import Footer from './Footer.js';
                             <input type="submit" name='Client View' value='Client View' className='btn btn-danger'
                                    onClick={clientChange}></input>
                         </div>
-                    </div> <br/>
+                    </div> <br/> */}
                 </div>
 
                 <br/><br/><br/>
